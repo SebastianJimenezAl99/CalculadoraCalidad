@@ -41,3 +41,12 @@ La CI o Integracion continua es basicamente cuando cada vez que alguien hace un 
 # Definir y justificar un umbral mínimo de cobertura (70–90%)
 Para el umbral minimo de cobertura decidi poner 70 porque la calculadora es un proyecto pequeño y con eso ya se asegura que la mayoria de las funciones importantes esten probadas
 
+# Uso de nektos/act:
+Investigar qué es act y documentar en README.md:
+- Qué hace.
+    permite que corran el pipeline que se crean de maneran local y ver los resultados
+- Requisitos (Docker)
+    para usar act se necesita tener instalado Docker porque act usa contenedores para simular el entorno de GitHub Actions
+- Comando para ejecutar el workflow localmente
+    act -j build
+
