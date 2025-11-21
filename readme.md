@@ -27,3 +27,17 @@
 - hace click en el botón borrar  
 - la etiqueta principal muestra otra vez 0  
 - todas las variables internas se reinician
+
+#  Explicar la diferencia entre CI y CD.
+La CI o Integracion continua es basicamente cuando cada vez que alguien hace un cambio en el codigo, automaticamente se corren pruebas, se revisa el estilo con el linter y se verifica que todo funcione, así si algo falla se detecta rápido y no rompe todo el proyecto. La CD o Entrega/Despliegue Continuo es lo que sigue despues, que el codigo que ya paso las pruebas se pueda poner en producción o en un servidor de pruebas automaticamente, sin tener que hacerlo manual, garantizando que siempre esté listo para usar y funcionando bien. En pocas palabras, la CI sirve para probar el codigo mientras se escribe y la CD sirve para entregarlo o desplegarlo cuando ya está listo.
+
+# Indicar lenguaje, linter y herramienta de cobertura a utilizar, con justificación.
+ - El lenguaje que utilice para pogramar es javascript por la facilidad de usar jest y la creacion de una pagina sencilla
+
+ - para el linter use ESLint porque detecta errores de sintaxis y problemas de estilo automaticamente
+
+ - para la herramienta de cobertura usare jest para hacer pruebas unitarias de forma sencilla y genera buenos resporte para guardar la informacion
+
+# Definir y justificar un umbral mínimo de cobertura (70–90%)
+Para el umbral minimo de cobertura decidi poner 70 porque la calculadora es un proyecto pequeño y con eso ya se asegura que la mayoria de las funciones importantes esten probadas
+
