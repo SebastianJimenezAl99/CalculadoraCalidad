@@ -50,3 +50,10 @@ Investigar qué es act y documentar en README.md:
 - Comando para ejecutar el workflow localmente
     act -j build
 
+# Validación y logs:
+En README.md explicar:
+- Cómo identificar fallos de linter, pruebas y cobertura en logs.
+    para identificar fallos de linter, pruebas y cobertura en los logs simplemente hay que mirar cada paso del workflow, si el linter encuentra errores en los archivos de codigo aparece listado en los logs y el paso falla, si alguna prueba unitaria no pasa Jest muestra en los logs que prueba fallo con los valores esperados y los que obtuvo, y si la cobertura es menor al umbral que definimos Jest tambien marca error y el workflow se detiene automaticamente mostrando que no se cumplio la cobertura minima
+- Generar un run fallido y uno exitoso y explicar la diferencia
+    Para generar un run exitoso solo hay que asegurarse que el codigo no tenga errores de sintaxis, y que todas las pruebas unitarias pasen y la cobertura cumpla el 70%, asi todos los pasos del workflow salen con check verde, mientras que para generar un run fallido se puede hacer algo sencillo como escribir mal una funcion, dejar un error de sintaxis o agregar una funcion sin prueba, entonces el linter marca error, alguna prueba falla o la cobertura baja del 70%, y en los logs se ve la x roja en el paso que fallo y el workflow se detiene, esa es la diferencia entre un run exitoso y uno fallido
+
