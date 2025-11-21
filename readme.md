@@ -56,4 +56,10 @@ En README.md explicar:
     para identificar fallos de linter, pruebas y cobertura en los logs simplemente hay que mirar cada paso del workflow, si el linter encuentra errores en los archivos de codigo aparece listado en los logs y el paso falla, si alguna prueba unitaria no pasa Jest muestra en los logs que prueba fallo con los valores esperados y los que obtuvo, y si la cobertura es menor al umbral que definimos Jest tambien marca error y el workflow se detiene automaticamente mostrando que no se cumplio la cobertura minima
 - Generar un run fallido y uno exitoso y explicar la diferencia
     Para generar un run exitoso solo hay que asegurarse que el codigo no tenga errores de sintaxis, y que todas las pruebas unitarias pasen y la cobertura cumpla el 70%, asi todos los pasos del workflow salen con check verde, mientras que para generar un run fallido se puede hacer algo sencillo como escribir mal una funcion, dejar un error de sintaxis o agregar una funcion sin prueba, entonces el linter marca error, alguna prueba falla o la cobertura baja del 70%, y en los logs se ve la x roja en el paso que fallo y el workflow se detiene, esa es la diferencia entre un run exitoso y uno fallido
-
+#IA y Ética:
+- Investigar dos métodos para detectar código generado por IA.
+    Bueno hay varias paginas donde usted agrega la informacion y especifica cual es el porcentaje de IA, y el otro metodo seria manual, puesto que la IA siempre inicia de la misma forma cuando se investiga algo, por ejemplo, "antes de hacer eso primero debemos...."
+- Explicar por qué no es posible asegurar al 100% la autoría.
+    no es posible porque muchos de los detectores buscan lenguaje tecnico y si un estudiante domina ese lenguaje puede paracer que es IA pero en realidad tiene un lenguage tecnico
+- Proponer políticas razonables de uso de IA en educación y calidad.
+    pues para mi la IA es ayuda de velocidad, es decir, que me ayuda hacer mas rapido lo que ya se,tambien la IA si se usa para estudiar es una buena herramienta porque incluso te puede explicar muy a detalle, pero es una herramienta no la informacion final, porque esta puede cometer errores
